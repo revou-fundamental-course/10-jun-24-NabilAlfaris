@@ -1,0 +1,42 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #dedede;
+    font-family: sans-serif;
+    font-weight: bold;
+    }
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+textarea {
+    background-color: #000000;
+    color: #dedede;
+    border-color: #262626;
+    border-radius: 4px;
+    resize: none;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+    }
+
+button {
+    border: none;
+    background-color: #0e1625;
+    color: #5b8ce2;
+    border-radius: 12px;
+    font-size: 18px;
+    margin: 6px 4px 0 0;
+}
+button:active {
+    background-color: #132544;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Conversi Suhu</title>
 </head>
 <body>
     <!-- main header -->
@@ -14,9 +14,15 @@
     
     <!-- main -->
     <main>
+        <p id="parafC">
+            Masukan suhu derajat Celsuis (&deg;C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi  dalam bentuk Fahrenheit (&deg;F).
+        </p>
+        <p id="parafF">
+            Masukan suhu derajat Fahrenheit (&deg;F) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi  dalam bentuk Celsius (&deg;C).
+        </p>
         <section id="mainCalculation">
             <section>
-                <p>Celsius (C)</p>
+                <p>Celsius (&deg;C)</p>
                 <textarea id="textareaC"></textarea>
                 <section id="buttonC">
                     <button onclick="conversiC()">Konversi</button>
@@ -25,7 +31,7 @@
                 </section>
             </section>
             <section>
-                <p>Fahrenheit (F)</p>
+                <p>Fahrenheit (&deg;F)</p>
                 <textarea id="textareaF"></textarea>
                 <section id="buttonF">
                     <button onclick="conversiF()">Konversi</button>
@@ -38,6 +44,9 @@
                 <p>Cara Kalkulasi</p>
                 <textarea id="rumus" disabled></textarea>
             </section>
+
+            <hr/>
+
     </main>
 
     <!-- footer -->
