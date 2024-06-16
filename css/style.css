@@ -4,17 +4,21 @@ body {
     padding: 0;
     background-color: #000000;
     color: #dedede;
-    font-family: sans-serif;
-    font-weight: bold;
-    }
+    font-family: cursive;
+}
 
 header {
     display: flex;
     justify-content: center;
 }
-
-main {
-    padding: 8px;
+header h1 {
+    background-color: #0e1625;
+    color: #5b8ce2;
+    padding: 10px;
+    border-radius: 2px 16px;
+}
+.main-content {
+    padding: 14px;
     display: flex;
     flex-direction: column;
 }
@@ -22,21 +26,33 @@ textarea {
     background-color: #000000;
     color: #dedede;
     border-color: #262626;
-    border-radius: 4px;
+    border-radius: 2px 16px;
     resize: none;
     font-family: cursive;
     font-weight: bold;
     font-size: 20px;
     }
 
-button {
-    border: none;
+    button {
     background-color: #0e1625;
     color: #5b8ce2;
-    border-radius: 12px;
-    font-size: 18px;
+    border: none;
+    border-radius: 0 12px;
+    font-size: 17px;
+    font-family: cursive;
     margin: 6px 4px 0 0;
 }
 button:active {
     background-color: #132544;
+}
+
+.subject-info {
+    font-size: 24px;
+    font-style: italic;
+    font-family: math;
+}
+
+.image-wp {
+    display: flex;
+    justify-content: space-between;
 }

@@ -3,6 +3,8 @@ const textareaF = document.getElementById("textareaF")
 const parafC = document.getElementById("parafC")
 const parafF = document.getElementById("parafF")
 const rumus = document.getElementById("rumus")
+const formulaC = document.getElementById("formulaC")
+const formulaF = document.getElementById("formulaF")
 const buttonC = document.getElementById("buttonC")
 const buttonF = document.getElementById("buttonF")
 const mainCalculation = document.getElementById("mainCalculation")
@@ -36,10 +38,13 @@ resetF = () => {
 // Funtion Reverse
 parafF.style.display = "none"
 buttonF.style.display = "none"
+formulaF.style.display = "none"
 textareaF.disabled = true
 mainCalculation.style.display = "flex"
 mainCalculation.style.flexDirection = "column"
 reverseC = () => {
+  formulaF.style.display = "block"
+  formulaC.style.display = "none"
   parafF.style.display = "block"
   parafC.style.display = "none"
   buttonF.style.display = "block"
@@ -48,8 +53,10 @@ reverseC = () => {
   textareaF.disabled = false
   mainCalculation.style.flexDirection = "column-reverse"
   rumus.value = `${textareaF.value}F - 32 / 1.8 = ${textareaC.value}°C`
-  }
-  reverseF = () => {
+}
+reverseF = () => {
+  formulaF.style.display = "none"
+  formulaC.style.display = "block"
   parafF.style.display = "none"
   parafC.style.display = "block"
   buttonF.style.display = "none"

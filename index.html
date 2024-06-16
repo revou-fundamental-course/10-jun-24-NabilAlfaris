@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Conversi Suhu</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/suisei2.png" />
+    <title>Konversi Suhu</title>
 </head>
 <body>
     <!-- main header -->
@@ -14,39 +15,74 @@
     
     <!-- main -->
     <main>
-        <p id="parafC">
-            Masukan suhu derajat Celsuis (&deg;C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi  dalam bentuk Fahrenheit (&deg;F).
-        </p>
-        <p id="parafF">
-            Masukan suhu derajat Fahrenheit (&deg;F) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi  dalam bentuk Celsius (&deg;C).
-        </p>
-        <section id="mainCalculation">
-            <section>
-                <p>Celsius (&deg;C)</p>
-                <textarea id="textareaC"></textarea>
-                <section id="buttonC">
-                    <button onclick="conversiC()">Konversi</button>
-                    <button onclick="resetC()">Reset</button>
-                    <button onclick="reverseC()">Reverse</button>
+        <section class="main-content">
+            <h4 id="parafC">
+                Masukan suhu derajat Celsuis (&deg;C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi  dalam bentuk Fahrenheit (&deg;F).
+            </h4>
+            <h4 id="parafF">
+                Masukan suhu derajat Fahrenheit (&deg;F) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi  dalam bentuk Celsius (&deg;C).
+            </h4>
+            <section id="mainCalculation">
+                <section>
+                    <p>Celsius (&deg;C)</p>
+                    <textarea id="textareaC"></textarea>
+                    <section id="buttonC">
+                        <button onclick="conversiC()">Konversi</button>
+                        <button onclick="resetC()">Reset</button>
+                        <button onclick="reverseC()">Reverse</button>
+                    </section>
+                </section>
+                <section>
+                    <p>Fahrenheit (&deg;F)</p>
+                    <textarea id="textareaF"></textarea>
+                    <section id="buttonF">
+                        <button onclick="conversiF()">Konversi</button>
+                        <button onclick="resetF()">Reset</button>
+                        <button onclick="reverseF()">Reverse</button>
+                    </section>
                 </section>
             </section>
-            <section>
-                <p>Fahrenheit (&deg;F)</p>
-                <textarea id="textareaF"></textarea>
-                <section id="buttonF">
-                    <button onclick="conversiF()">Konversi</button>
-                    <button onclick="resetF()">Reset</button>
-                    <button onclick="reverseF()">Reverse</button>
-                </section>
-            </section>
-        </section>
             <section>
                 <p>Cara Kalkulasi</p>
                 <textarea id="rumus" disabled></textarea>
             </section>
-
-            <hr/>
-
+            <section id="formulaC">
+                <hr/>
+                <h4>
+                    Suhu <span class="subject-info">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span class="subject-info">S</span> dalam derajat Celsius (&deg;C)
+                </h4>
+                <section class="image-wp">
+                    <section>
+                        <p>
+                            <span class="subject-info">S</span><sub>(&deg;F)</sub> = <span class="subject-info">S</span><sub>(&deg;C)</sub> * 9/5 + 32
+                        </p>
+                        <p>atau</p>
+                        <p>
+                            <span class="subject-info">S</span><sub>(&deg;F)</sub> = <span class="subject-info">S</span><sub>(&deg;C)</sub> * 1.8 + 32
+                        </p>
+                    </section>
+                    <img src="assets/suisei.png" alt="suisei" width="150px" height="150px">
+                </section>
+            </section>
+            <section id="formulaF">
+                <hr/>
+                <h4>
+                    Suhu <span class="subject-info">S</span> dalam derajat Celsius (&deg;C) sama dengan suhu <span class="subject-info">S</span> dalam derajat Fahrenheit (&deg;F)
+                </h4>
+                <section class="image-wp">
+                    <section>
+                        <p>
+                            <span class="subject-info">S</span><sub>(&deg;C)</sub> = <span class="subject-info">S</span><sub>(&deg;F)</sub> - 32 : 9/5 
+                        </p>
+                        <p>atau</p>
+                        <p>
+                            <span class="subject-info">S</span><sub>(&deg;C)</sub> = <span class="subject-info">S</span><sub>(&deg;F)</sub> - 32 : 1.8
+                        </p>
+                    </section>
+                    <img src="assets/suisei.png" alt="suisei" width="150px" height="150px">
+                </section>
+            </section>
+        </section>
     </main>
 
     <!-- footer -->
