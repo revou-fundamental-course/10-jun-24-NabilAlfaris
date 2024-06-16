@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- main header -->
@@ -13,11 +13,37 @@
     </header>
     
     <!-- main -->
-    <main></main>
+    <main>
+        <section id="mainCalculation">
+            <section>
+                <p>Celsius (C)</p>
+                <textarea id="textareaC"></textarea>
+                <section id="buttonC">
+                    <button onclick="conversiC()">Konversi</button>
+                    <button onclick="resetC()">Reset</button>
+                    <button onclick="reverseC()">Reverse</button>
+                </section>
+            </section>
+            <section>
+                <p>Fahrenheit (F)</p>
+                <textarea id="textareaF"></textarea>
+                <section id="buttonF">
+                    <button onclick="conversiF()">Konversi</button>
+                    <button onclick="resetF()">Reset</button>
+                    <button onclick="reverseF()">Reverse</button>
+                </section>
+            </section>
+        </section>
+            <section>
+                <p>Cara Kalkulasi</p>
+                <textarea id="rumus" disabled></textarea>
+            </section>
+    </main>
+
     <!-- footer -->
     <footer></footer>
 
     <!-- javascript -->
-    <script src="main.js"></script>
+    <script src="javascript/main.js"></script>
 </body>
 </html>
