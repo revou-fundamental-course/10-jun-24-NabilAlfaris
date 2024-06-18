@@ -30,9 +30,13 @@ conversiF = () => {
 // Funtion Reset
 resetC = () => {
   textareaC.value = ""
+  textareaF.value = ""
+  rumus.value = ""
 }
 resetF = () => {
+  textareaC.value = ""
   textareaF.value = ""
+  rumus.value = ""
 }
 
 // Funtion Reverse
